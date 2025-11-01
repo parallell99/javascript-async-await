@@ -33,3 +33,19 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+
+let result1 = (data) => {
+  
+  console.log(data);
+  
+};
+let result2 = (data) =>{
+  console.log(data);
+  
+}
+let error = (error) => {
+  console.log(error);
+  
+}
+getJohnProfile().then(result1).then(getJohnOrders).then(result2).catch(error)
+console.log("Loading...");
